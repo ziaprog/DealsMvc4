@@ -1,0 +1,141 @@
+﻿@model SirfDealsMvc4.Product
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Product</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Title)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Title)
+            @Html.ValidationMessageFor(model => model.Title)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Description)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Description)
+            @Html.ValidationMessageFor(model => model.Description)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ImageId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ImageId)
+            @Html.ValidationMessageFor(model => model.ImageId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ImageUrl)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ImageUrl)
+            @Html.ValidationMessageFor(model => model.ImageUrl)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Price)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Price)
+            @Html.ValidationMessageFor(model => model.Price)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CouponCode)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CouponCode)
+            @Html.ValidationMessageFor(model => model.CouponCode)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AffiliateLink)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AffiliateLink)
+            @Html.ValidationMessageFor(model => model.AffiliateLink)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ExpiryDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ExpiryDate)
+            @Html.ValidationMessageFor(model => model.ExpiryDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CategoryId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CategoryId)
+            @Html.ValidationMessageFor(model => model.CategoryId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UserId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UserId)
+            @Html.ValidationMessageFor(model => model.UserId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PostedDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PostedDate)
+            @Html.ValidationMessageFor(model => model.PostedDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Website)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Website)
+            @Html.ValidationMessageFor(model => model.Website)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Clicks)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Clicks)
+            @Html.ValidationMessageFor(model => model.Clicks)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PercentageOff)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PercentageOff)
+            @Html.ValidationMessageFor(model => model.PercentageOff)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

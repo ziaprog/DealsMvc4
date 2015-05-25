@@ -1,0 +1,1 @@
+C:\Users\zia\documents\visual studio 2012\Projects\SirfDealsMvc4\SirfDealsMvc4.Tests\obj\Debug\SirfDealsMvc4.Tests.csprojResolveAssemblyReference.cache
